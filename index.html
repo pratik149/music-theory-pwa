@@ -5,6 +5,12 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
 <link rel="stylesheet" type="text/css" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
 <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+<script>
+  $(".myBox").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
+</script>
 </head>
 <body>
 
@@ -30,11 +36,12 @@
 </div>
 
 <div class="grid-container">
-  <div class="item1">Header</div>
-  <div class="item2">Menu</div>
-  <div class="item3">Main</div>  
-  <div class="item4">Right</div>
-  <div class="item5">Footer</div>
+  <div class="item1">Reading Notations <a href="https://www.musictheory.net/lessons/10"><p style="font-size=18px;color:pink;"> The staff, Clefs, and Ledger Lines <br> Measures and Time Signature</p></a>
+  </div>
+  <div class="item2"><a href="https://www.musictheory.net/lessons/40">Chords</a></div>
+  <div class="item3"><a href="https://www.musictheory.net/lessons/21">Scales</a></div>  
+  <div class="item4"><a href="https://www.musictheory.net/lessons/15">Rhythm</a></div>
+  <div class="item5"><a href="https://www.musictheory.net/lessons/30">Intervals</a></div>
 </div>
 
 <script>
@@ -46,11 +53,14 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+
 <script type="text/javascript" src="scripts/script.js"></script>
 
 <script type="text/javascript" src="scripts/jquery-3.4.0.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
 
 
 </body>
