@@ -57,20 +57,29 @@ function closeNav() {
 
 <script>
 
-if('serviceWorker' in navigator){
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
-    .then(reg => {
-      console.log('Registered!', reg);
-    })
-    .catch(err => {
-      console.log('Not Registered', err);
-    });
-  });
-}
+// if('serviceWorker' in navigator){
+//   window.addEventListener('load', () => {
+//     navigator.serviceWorker.register('/service-worker.js')
+//     .then(reg => {
+//       console.log('Registered!', reg);
+//     })
+//     .catch(err => {
+//       console.log('Not Registered', err);
+//     });
+//   });
+// }
+  
+ if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js', { scope: '/' })
+          .then(function(registration) {
+                console.log('Service Worker Registered');
+          });
+        navigator.serviceWorker.ready.then(function(registration) {
+           console.log('Service Worker Ready');
+        });
+      }
 
 </script>
-
 
 <!-- To add to homescreen -->
 <script>
