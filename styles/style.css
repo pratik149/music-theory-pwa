@@ -7,14 +7,17 @@ body {
 .item3 { grid-area: main; }
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
+.item6 { grid-area: left; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
+    'header header header header header header header header'
+    'header header header header header header header header'
+    'menu menu main main right right footer footer'
+    'menu menu main main right right footer footer';
   grid-gap: 10px;
+  /*grid-template-rows: 200px 250px;*/
   height: 500px;
   background-color: #FFEFD5;
   padding: 10px;
