@@ -1,1 +1,21 @@
-
+{
+  "short_name": "Music PWA!",
+  "name": "Music Theory PWA",
+  "icons": [
+    {
+      "src": "/assets/icon192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/icon512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html?from=homescreen",
+  "background_color": "#5DADE2",
+  "display": "standalone",
+  "orientation": "potrait"
+  "theme_color": "#5DADE2"
+}
