@@ -16,6 +16,7 @@
   "start_url": "/index.html?from=homescreen",
   "background_color": "#5DADE2",
   "display": "standalone",
-  "orientation": "potrait"
+  "orientation": "potrait",
+  "scope": "/",
   "theme_color": "#5DADE2"
 }
